@@ -28,7 +28,7 @@ const projects = [
   type: 'Utility',
   link: 'https://theofficialminetoken.io/wp-content/uploads/elementor/thumbs/cropped-logo-MCMT_120px-pii1f11vaz5bjvyertktwrn0wty3007rdga2em3s9a.png',
   chain: 'ETH',
-  auditType: 'FUNDAMENTAL',
+  auditType: 'FULL',
   githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/MINE_fundamental_code.pdf'
 }
 
