@@ -50,7 +50,7 @@ const Boxes = () => {
     <Grid templateColumns={['repeat(1, 1fr)', null, 'repeat(3, 1fr)', 'repeat(3, 1fr)', 'repeat(5, 1fr)']} gap={6} w='75%' mb='6px'>
 
     {projects && projects.map(project => (
-       <div key={project.id}>
+       <div key={project.name}>
        <GridItem w='100%' h='10' align='center' mb='170px'>
     <Box maxW='sm' borderWidth='1px' borderRadius='lg' alignContent={'center'}>
         <Stack direction='row' alignItems='baseline'>
