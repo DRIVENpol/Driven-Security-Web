@@ -78,23 +78,6 @@ export default function Hero() {
 
             </Button>
             <Box>
-              <Icon
-                as={Arrow}
-                color={useColorModeValue('gray.800', 'gray.300')}
-                w={71}
-                position={'absolute'}
-                right={-71}
-                top={'10px'}
-              />
-              <Text
-                fontSize={'lg'}
-                fontFamily={'Caveat'}
-                position={'absolute'}
-                right={'-125px'}
-                top={'-15px'}
-                transform={'rotate(10deg)'}>
-               Need an audit?
-              </Text>
             </Box>
             <Center> <Link href={'https://www.drivenecosystem.com' } mb={['50px', null, null, '50px']} isExternal pr='15px'><u>DRIVENecosystem website</u></Link></Center>
           </Stack>
