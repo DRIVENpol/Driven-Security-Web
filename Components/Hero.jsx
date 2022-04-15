@@ -16,7 +16,7 @@ import {
    HStack, Center
 } from '@chakra-ui/react';
 
-import {ArrowRightIcon} from '@chakra-ui/icons'
+import logoBg from '../Assets/Images/bg-dvx-web.png'
 
 export default function Hero() {
   return (
@@ -28,15 +28,18 @@ export default function Hero() {
         />
       </Head>
 
-      <Container maxW={'3xl'} mb='-100px'>
+      <Container maxW={'75%'} mb='-100px' backgroundImage={logoBg.src} backgroundPosition='center' 
+      backgroundRepeat='no-repeat' backgroundSize='cover'
+      width='90vw'
+      height='90vh'>
         <Stack
           as={Box}
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}>
+          py={{ base: 20, md: 36 }} >
 
 
-        <Center>
+        <Center >
             <HStack spacing={4}>
                 <Tag size={'lg'}  variant='subtle' colorScheme='cyan'>
                 <Center>

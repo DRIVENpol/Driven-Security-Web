@@ -10,7 +10,7 @@ import Ava from '../Assets/Images/ava-logo.png'
 const SupportedChains = () => {
   return (
    <>
-   <Container maxW='full' bg='telegram.900' align='center'>
+   <Container maxW='full' bg='telegram.900' align='center' >
    <Box bg='telegram.900' pt='20px' pb='20px' mt='20px' mb='20px'>
     <Center>
     <Text color='white' fontSize='3xl'><b>Supported Chains</b></Text>
@@ -20,7 +20,7 @@ const SupportedChains = () => {
           that is <br/>compatible with an EVM-based blockchain:
         </Text></Center><br/>
     <Center>
-    <Grid templateColumns={['repeat(1, 1fr)', null, 'repeat(3, 1fr)', 'repeat(3, 1fr)', 'repeat(4, 1fr)']} gap={6} w='50%' mb='20px'>
+    <Grid templateColumns={['repeat(1, 1fr)', null, 'repeat(3, 1fr)', 'repeat(3, 1fr)', 'repeat(4, 1fr)']} gap={6} w='50%' mb='20px' >
     <GridItem w='100%' h='10' align='center' mb='20px'><Image src={Eth.src} /></GridItem>
     <GridItem w='100%' h='10' align='center' mb='20px'><Image src={Bsc.src} /></GridItem>
     <GridItem w='100%' h='10' align='center' mb='20px'><Image src={Poly.src} /></GridItem>
