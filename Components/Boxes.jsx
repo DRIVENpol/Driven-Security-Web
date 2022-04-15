@@ -38,6 +38,14 @@ const projects = [
   chain: 'BSC',
   auditType: 'FUNDAMENTAL',
   githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/EverRise_fundamental.pdf'
+},
+{
+  name: 'Elitheum',
+  type: 'Utility',
+  link: 'https://s2.coinmarketcap.com/static/img/coins/64x64/12320.png',
+  chain: 'BSC',
+  auditType: 'TECHNICAL',
+  githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/Elitheum_code.pdf'
 }
 
 
@@ -49,7 +57,7 @@ const Boxes = () => {
     <>
 
 <Center>
-    <Text color='black' fontSize='3xl' mt='40px'><b>Our latest audits</b></Text>
+    <Text color='black' fontSize='3xl' mt='40px'><b>DRIVENsecurity audits</b></Text>
     </Center>
     <Center><Text color={'grey'} align='center'>
           Check our latest audits
