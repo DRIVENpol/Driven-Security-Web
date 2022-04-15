@@ -70,7 +70,7 @@ const Navbar = () => {
               bg='#086F83'
               color='white'
               maxW={['75%', null, null, null, '100%']}
-              ml="25px"
+              ml="30px"
               fontSize={['10px', null, null, null, '100%']}
               leftIcon={<AddIcon />}
               _hover={{ bg: '#1c8ca2'}}>
