@@ -38,7 +38,7 @@ export default function Hero() {
 
         <Center>
             <HStack spacing={4}>
-                <Tag size={'lg'} variant='subtle' colorScheme='cyan'>
+                <Tag size={'lg'}  variant='subtle' colorScheme='cyan'>
                 <TagLeftIcon boxSize='12px' as={ArrowRightIcon} />
                 <Center>
                 <TagLabel><b>Latest news: </b>DRIVENsecurity introducing NFT audits</TagLabel>
