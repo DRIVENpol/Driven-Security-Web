@@ -10,8 +10,8 @@ import Ava from '../Assets/Images/ava-logo.png'
 const SupportedChains = () => {
   return (
    <>
-   <Container maxW='full'>
-   <Box bg='telegram.900' pt='20px' pb='20px' mt='20px' mb='20px'>>
+   <Container maxW='full' bg='telegram.900' align='center'>
+   <Box bg='telegram.900' pt='20px' pb='20px' mt='20px' mb='20px'>
     <Center>
     <Text color='white' fontSize='3xl'><b>Supported Chains</b></Text>
     </Center><br />
