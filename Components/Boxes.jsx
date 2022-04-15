@@ -24,7 +24,7 @@ const projects = [
 },
 
 {
-  name: 'Enj,
+  name: 'Enj',
   type: 'Metaverse',
   link: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png',
   chain: 'ETH',
