@@ -41,7 +41,7 @@ const Boxes = () => {
     <>
 
 <Center>
-    <Text color='black' fontSize='3xl' mt='20px'><b>Our latest audits</b></Text>
+    <Text color='black' fontSize='3xl' mt='40px'><b>Our latest audits</b></Text>
     </Center>
     <Center><Text color={'grey'} align='center'>
           Check our latest audits

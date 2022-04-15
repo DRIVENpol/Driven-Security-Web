@@ -11,7 +11,7 @@ const SupportedChains = () => {
   return (
    <>
    <Container maxW='full'>
-   <Box bg='telegram.900' pt='20px' pb='20px'>
+   <Box bg='telegram.900' pt='20px' pb='20px' mt='20px' mb='20px'>>
     <Center>
     <Text color='white' fontSize='3xl'><b>Supported Chains</b></Text>
     </Center><br />
