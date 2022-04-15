@@ -69,8 +69,9 @@ const Navbar = () => {
               variant={'solid'}
               bg='#086F83'
               color='white'
-              size={'md'}
-              ml={['30px']}
+              maxW={['75%', null, null, null, '100%']}
+              ml="25px"
+              fontSize={['10px', null, null, null, '100%']}
               leftIcon={<AddIcon />}
               _hover={{ bg: '#1c8ca2'}}>
               <Link isExternal href={'https://tcj29s11ect.typeform.com/to/byJd7PeS'}>
