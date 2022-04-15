@@ -15,7 +15,16 @@ const projects = [
 },
 
 {
-  name: 'Bitcoin',
+  name: 'Dvs',
+  type: 'Metaverse',
+  link: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png',
+  chain: 'ETH',
+  auditType: 'TECHNICAL AUDIT',
+  githubLink: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png'
+},
+
+{
+  name: 'Enj,
   type: 'Metaverse',
   link: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png',
   chain: 'ETH',
