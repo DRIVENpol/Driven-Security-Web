@@ -10,7 +10,7 @@ const projects = [
   type: 'Metaverse',
   link: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png',
   chain: 'ETH',
-  auditType: 'TECHNICAL AUDIT',
+  auditType: 'WALLETS',
   githubLink: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png'
 },
 
@@ -19,7 +19,7 @@ const projects = [
   type: 'Metaverse',
   link: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png',
   chain: 'ETH',
-  auditType: 'TECHNICAL AUDIT',
+  auditType: 'TECHNICAL',
   githubLink: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png'
 },
 
@@ -28,7 +28,7 @@ const projects = [
   type: 'Metaverse',
   link: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png',
   chain: 'ETH',
-  auditType: 'TECHNICAL AUDIT',
+  auditType: 'FUNDAMENTAL',
   githubLink: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png'
 }
 
@@ -56,9 +56,15 @@ const Boxes = () => {
         <Stack direction='row' alignItems='baseline'>
             <Avatar mt='5%' ml='2%' src={project.link} />
             <div>
-            <Badge colorScheme='green' mt='-35%'>
+            {project.auditType ==='TECHNICAL' ? ( <Badge colorScheme='green' mt='-45%'>
         {project.auditType}
-      </Badge>
+      </Badge>): 
+      <>{project.auditType ==='FUNDAMENTAL' ? <Badge colorScheme='yellow' mt='-45%'>
+        {project.auditType}
+      </Badge>:<Badge colorScheme='blue' mt='-55%'>
+        {project.auditType}
+      </Badge>}</>}
+           
             </div>
 
    </Stack>
