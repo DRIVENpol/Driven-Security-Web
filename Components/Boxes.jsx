@@ -30,6 +30,14 @@ const projects = [
   chain: 'ETH',
   auditType: 'FULL',
   githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/MINE_fundamental_code.pdf'
+},
+{
+  name: 'EverRise',
+  type: 'Utility',
+  link: 'https://s2.coinmarketcap.com/static/img/coins/64x64/15257.png',
+  chain: 'BSC',
+  auditType: 'FUNDAMENTAL',
+  githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/EverRise_fundamental.pdf'
 }
 
 
