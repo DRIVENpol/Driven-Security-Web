@@ -21,7 +21,7 @@ const projects = [
   chain: 'ETH',
   auditType: 'TECHNICAL AUDIT',
   githubLink: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png'
-},
+}
 
 
 
