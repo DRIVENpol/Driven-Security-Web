@@ -6,30 +6,30 @@ import { AttachmentIcon, FaFacebook, FaTwitter } from '@chakra-ui/icons';
 
 const projects = [
 {
-  name: 'Bitcoin',
+  name: 'TCG',
   type: 'Metaverse',
-  link: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png',
-  chain: 'ETH',
-  auditType: 'WALLETS',
-  githubLink: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png'
+  link: 'https://www.drivenx.finance/wp-content/uploads/2022/02/TCG-drivenlock.png',
+  chain: 'BSC & ETH',
+  auditType: 'FULL',
+  githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/DRIVENsecurity_TCG_Fundamental_2022.pdf'
 },
 
 {
-  name: 'Dvs',
-  type: 'Metaverse',
-  link: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png',
-  chain: 'ETH',
+  name: 'JoinCoin',
+  type: 'Staking',
+  link: 'https://s2.coinmarketcap.com/static/img/coins/64x64/18733.png',
+  chain: 'BSC',
   auditType: 'TECHNICAL',
-  githubLink: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png'
+  githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/JoinCoin_code.pdf'
 },
 
 {
-  name: 'Enj',
-  type: 'Metaverse',
-  link: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png',
+  name: 'MINE',
+  type: 'Utility',
+  link: 'https://theofficialminetoken.io/wp-content/uploads/elementor/thumbs/cropped-logo-MCMT_120px-pii1f11vaz5bjvyertktwrn0wty3007rdga2em3s9a.png',
   chain: 'ETH',
   auditType: 'FUNDAMENTAL',
-  githubLink: 'https://www.drivenx.finance/wp-content/uploads/2021/12/NEW-TOKEN.png'
+  githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/MINE_fundamental_code.pdf'
 }
 
 
@@ -61,7 +61,7 @@ const Boxes = () => {
       </Badge>): 
       <>{project.auditType ==='FUNDAMENTAL' ? <Badge colorScheme='yellow' mt='-45%'>
         {project.auditType}
-      </Badge>:<Badge colorScheme='blue' mt='-55%'>
+      </Badge>:<Badge colorScheme='blue' mt='-100%'>
         {project.auditType}
       </Badge>}</>}
            
