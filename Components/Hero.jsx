@@ -97,7 +97,7 @@ export default function Hero() {
                Need an audit?
               </Text>
             </Box>
-            <Center> <Link href={'https://www.drivenecosystem.com' } mb={[null, '40px']} isExternal pr='15px'><u>DRIVENecosystem website</u></Link></Center>
+            <Center> <Link href={'https://www.drivenecosystem.com' } mb={['50px', null, null, '50px']} isExternal pr='15px'><u>DRIVENecosystem website</u></Link></Center>
           </Stack>
         </Stack>
         
