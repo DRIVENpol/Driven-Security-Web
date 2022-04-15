@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Text, Center, Grid, GridItem, Box, Image  } from '@chakra-ui/react'
+import { Text, Center, Grid, GridItem, Box, Image, Container  } from '@chakra-ui/react'
 import Eth from '../Assets/Images/eth-logo.png'
 import Bsc from '../Assets/Images/bsc-logo.png'
 import Poly from '../Assets/Images/poly-logo.png'
@@ -10,7 +10,8 @@ import Ava from '../Assets/Images/ava-logo.png'
 const SupportedChains = () => {
   return (
    <>
-    <Box bg='telegram.900' pt='20px' pb='20px' maxW='full'>
+   <Container maxW='full'>
+   <Box bg='telegram.900' pt='20px' pb='20px'>
     <Center>
     <Text color='white' fontSize='3xl'><b>Supported Chains</b></Text>
     </Center><br />
@@ -28,6 +29,7 @@ const SupportedChains = () => {
     </Grid>
     </Center>
     </Box>
+   </Container>
    </>
   )
 }
