@@ -29,9 +29,10 @@ export default function Hero() {
       </Head>
 
       <Container maxW={['100%', null, null, null, '75%']} backgroundImage={logoBg.src} 
-      backgroundPosition='center' 
+      backgroundPosition='bottom' 
       backgroundRepeat='no-repeat' 
       backgroundSize='cover'
+
       mb='40px'>
         <Stack
           as={Box}

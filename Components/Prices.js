@@ -22,37 +22,30 @@ import {
       name: 'Technical Audit',
       price: '$2,200',
       duration: '3 days',
-      modalContent: '1',
+      modalContent: 'DRIVENsecurity is providing a detailed smart contract audit that is thoroughly examined and analyzed. This procedure is carried out to uncover mistakes, flaws, and security vulnerabilities in the code in order to recommend improvements and solutions. In general, smart contract audits are required because most contracts deal with financial assets.',
       modalTitle: 'Technical Audit'
     },
     {
         name: 'Fundamental Audit',
         price: '$2,500',
         duration: '3 days',
-        modalContent: '2',
+        modalContent: 'Fundamental Analysis is an overall project analysis with several separate aspects that will be evaluated before reaching a final decision. Every element will be rated with a score ranging from 1 to 5, and we will be able to obtain a total score and conclusion for all aspects.',
         modalTitle: 'Fundamental Audit'
       },
       {
         name: 'Wallet Forensics',
         price: '$900',
         duration: '5 days',
-        modalContent: '3',
+        modalContent: "In the process of wallet forensics, DRIVENteam will go through the top 25 holders and check their stability and holding amounts. We will also look at the contract owner's initial transactions that are made right after the initial minting of the supply after smart contract deployment, in the hopes of uncovering suspicious token liquidation from team members and any suspicious use of the tokens from provided liquidity pool.",
         modalTitle: 'Wallet Forensics'
       },
       {
         name: 'KYC Verification',
         price: '$450',
         duration: '3 days',
-        modalContent: '4',
+        modalContent: 'ID Verification and Call Verification.',
         modalTitle: 'KYC Verification'
       },
-      {
-        name: 'KYC Verification',
-        price: '$450',
-        duration: '3 days',
-        modalContent: '5',
-        modalTitle: 'KYC Verification'
-      }
     ]
 
 
@@ -123,7 +116,7 @@ const closeModal = () => {
               
 <Modal isOpen={modalIsOpen} onClose={closeModal}>
         <ModalOverlay />
-        <ModalContent mt='20%'>
+        <ModalContent mt={['80%', '40%', null, '25%', '15%']}>
           <ModalHeader>{modalT}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
