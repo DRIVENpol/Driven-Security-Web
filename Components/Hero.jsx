@@ -42,7 +42,6 @@ export default function Hero() {
         <Center >
             <HStack spacing={4}>
                 <Tag size={'lg'}  variant='subtle' colorScheme='cyan'  
-                mb='20px'
                 mt={['20px', null, null, null, '20px']}>
                 <Center>
                 <TagLabel mt='4px' mb='4px' ml='4px' mr='4px'><b>Latest news: <br /></b>DRIVENsecurity introducing NFT audits</TagLabel>
@@ -59,7 +58,7 @@ export default function Hero() {
             Welcome to DRIVENsecurity!
           </Heading>
           <Text color={'gray.500'}>
-          Cryptocurrency is currently in a gold rush stage, with many new individuals entering the market, and whenever new people enter a market or space, there will always be others looking to take advantage of those new entrants. We're here to help prevent that as much as we can using DRIVENsecurity.
+          Cryptocurrency is currently in a gold rush stage, with many new individuals entering the market, and whenever new people enter a market or space, <br /> there will always be others looking to take advantage of those new entrants. <br />We're here to help prevent that as much as we can using DRIVENsecurity.
            <br/><br/> <b>DRIVENsecurity is a service that delivers security analysis for DeFi projects as part of the DRIVENecosystem.
           </b>
         </Text>
