@@ -62,7 +62,7 @@ const closeModal = () => {
     <Container bg='#f1f1f1' maxW='100%' textAlign={'center'} >
     <Text color='black' fontSize='3xl' pt='40px' ><b>Our audits & fees</b></Text>
     <Container bg='#f1f1f1' maxW='100%'><Text color={'grey'} align='center' mb='20px'>
-          Check our latest audits
+          Learn more about our audits and find the according fees
         </Text></Container><br/>
         <Center>
 
