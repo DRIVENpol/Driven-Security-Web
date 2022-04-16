@@ -81,7 +81,7 @@ const closeModal = () => {
                 borderWidth='2px' borderColor={'black'}
                 borderRadius='15px'
                 textAlign={'left'}
-                mb='20px'>
+                pb={['40px', null, null, '40px', null, '20px']} mb='10px'>
                   <Grid templateColumns='repeat(4, 1fr)' gap={6} >
                         <GridItem w='100%' h='10'>
                             <Text><b>Type</b></Text>
@@ -107,7 +107,7 @@ const closeModal = () => {
               w='100%'
               size={'sm'}
               mr={'10px'}
-              mt='7px'
+              mt={['20px', null, null, null, '17px','7px']}
               _hover={{ bg: '#17294e'}} onClick={()=> {
                 setModalIsOpen(true)
                setModalC(audit.modalContent)
