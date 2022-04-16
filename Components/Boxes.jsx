@@ -63,7 +63,7 @@ const Boxes = () => {
           Check our latest audits
         </Text></Center><br/>
     <Center>
-    <Grid templateColumns={['repeat(1, 1fr)', null, 'repeat(3, 1fr)', 'repeat(3, 1fr)', 'repeat(5, 1fr)']} gap={6} w='75%' mb='6px'>
+    <Grid templateColumns={['repeat(1, 1fr)', null, 'repeat(2, 1fr)', 'repeat(3, 1fr)', 'repeat(4, 1fr)', 'repeat(5, 1fr)']} gap={6} w='75%' mb='6px'>
 
     {projects && projects.map(project => (
        <div key={project.name}>
