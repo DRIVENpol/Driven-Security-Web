@@ -53,7 +53,7 @@ const { isOpen, onOpen, onClose } = useDisclosure()
         </Text></Container><br/>
         <Center>
 
-        <Grid templateColumns='repeat(1, 1fr)' gap={6} >
+        <Grid templateColumns='repeat(1, 1fr)' gap={6} w={['100%', null, null, null, '50%']}> 
         <GridItem>
         {auditPrices && auditPrices.map(audit => (
             <div key={audit.name}>
@@ -64,7 +64,7 @@ const { isOpen, onOpen, onClose } = useDisclosure()
                 mb='20px'>
                   <Grid templateColumns='repeat(4, 1fr)' gap={6} >
                         <GridItem w='100%' h='10'>
-                            <Text><b>Audit Type</b></Text>
+                            <Text><b>Type</b></Text>
                             <Text>{audit.name}</Text>
                         </GridItem>
 
