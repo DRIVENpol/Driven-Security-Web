@@ -12,7 +12,7 @@ const Footer = () => {
   <GridItem w='100%' mt={[null, null, null, null, '10px']}><Text>All Rights Reserved.</Text></GridItem>
   <GridItem w='100%'><Center>
   <HStack> 
-  <Button colorScheme='blackAlpha'>Facebook</Button>
+  <Button colorScheme='blackAlpha'>Discord</Button>
   <Button colorScheme='blackAlpha'>Twitter</Button>
   <Button colorScheme='blackAlpha'>DRIVENecosystem</Button>
  
