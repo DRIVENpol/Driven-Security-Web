@@ -1,4 +1,4 @@
-import { Container, Grid, GridItem, useColorModeValue, Link,Image, Text, Button, HStack, Center } from '@chakra-ui/react'
+import { Container, Grid, GridItem, useColorModeValue, Link, Image, Text, Button, HStack, Center } from '@chakra-ui/react'
 import React from 'react'
 import { FaFacebook, FaTwitter } from '@chakra-ui/icons'
 import Logo from '../Assets/Images/dvs.png'
@@ -12,9 +12,9 @@ const Footer = () => {
   <GridItem w='100%' mt={[null, null, null, null, '10px']}><Text>All Rights Reserved.</Text></GridItem>
   <GridItem w='100%'><Center>
   <HStack> 
-  <Button colorScheme='blackAlpha'>Discord</Button>
-  <Button colorScheme='blackAlpha'>Twitter</Button>
-  <Button colorScheme='blackAlpha'>DRIVENecosystem</Button>
+  <Button colorScheme='blackAlpha'><Link href='https://discord.com/invite/qZ36FNT23w' isExternal>Discord</Link></Button>
+  <Button colorScheme='blackAlpha'><Link href='https://twitter.com/DRIVENprotocol' isExternal>Twitter</Link></Button>
+  <Button colorScheme='blackAlpha'><Link href='https://www.drivenecosystem.com/' isExternal>DRIVENecosystem</Link></Button>
  
  
   </HStack> </Center>
