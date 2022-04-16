@@ -57,7 +57,7 @@ const Boxes = () => {
     <>
 
 <Center>
-    <Text color='black' fontSize='3xl' mt='40px'><b>DRIVENsecurity audits</b></Text>
+    <Text color='black' fontSize='3xl' mt='40px' ><b>DRIVENsecurity audits</b></Text>
     </Center>
     <Center><Text color={'grey'} align='center'>
           Check our latest audits

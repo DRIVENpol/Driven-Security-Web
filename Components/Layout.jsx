@@ -18,26 +18,9 @@ import {
   MenuDivider,
   useDisclosure,
   useColorModeValue,
-  Stack,
+  Stack, Text
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
-
-const Links = ['Home', 'Ongoing Audits', 'Passed Audits'];
-
-const NavLink = ({ children }, { children: ReactNode }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={'md'}
-    color='white'
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.500', 'gray.700'),
-    }}
-    href={'#'}>
-    {children}
-  </Link>
-);
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -59,9 +42,11 @@ const Navbar = () => {
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
+              
+            <Button colorScheme='blackAlpha' onClick={() => window.location.replace("/#")}>Home</Button>
+            <Button colorScheme='blackAlpha'onClick={() => window.location.replace("/#boxes")}>Audits</Button>
+            <Button colorScheme='blackAlpha'onClick={() => window.location.replace("/#prices")}>Prices</Button>
+
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
@@ -100,9 +85,11 @@ const Navbar = () => {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
+              
+            <Button colorScheme='blackAlpha' onClick={() => window.location.replace("/#")}>Home</Button>
+            <Button colorScheme='blackAlpha'onClick={() => window.location.replace("/#boxes")}>Audits</Button>
+            <Button colorScheme='blackAlpha'onClick={() => window.location.replace("/#prices")}>Prices</Button>
+
             </Stack>
           </Box>
         ) : null}

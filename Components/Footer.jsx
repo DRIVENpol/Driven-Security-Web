@@ -15,8 +15,6 @@ const Footer = () => {
   <Button colorScheme='blackAlpha'><Link href='https://discord.com/invite/qZ36FNT23w' isExternal>Discord</Link></Button>
   <Button colorScheme='blackAlpha'><Link href='https://twitter.com/DRIVENprotocol' isExternal>Twitter</Link></Button>
   <Button colorScheme='blackAlpha'><Link href='https://www.drivenecosystem.com/' isExternal>DRIVENecosystem</Link></Button>
- 
- 
   </HStack> </Center>
   </GridItem>
 </Grid>
