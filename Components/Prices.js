@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { Container, Text, Center, Box, Grid, 
-    Link, GridItem, Button, useDisclosure  } from '@chakra-ui/react'
+    Link, GridItem, Button } from '@chakra-ui/react'
 
 import { AddIcon } from '@chakra-ui/icons';
 
@@ -15,36 +15,56 @@ import {
     ModalCloseButton,
   } from '@chakra-ui/react'
 
+
+
   const auditPrices= [
     {
-      name: 'Audit1',
-      price: '$2,400',
+      name: 'Technical Audit',
+      price: '$2,200',
       duration: '3 days',
-      modalContent: 'Lore ipsum and shitty shits',
+      modalContent: '1',
+      modalTitle: 'Technical Audit'
     },
     {
-        name: 'Audit 2',
-        price: '$2,400',
+        name: 'Fundamental Audit',
+        price: '$2,500',
         duration: '3 days',
-        modalContent: 'Lore ipsum and shitty shits',
+        modalContent: '2',
+        modalTitle: 'Fundamental Audit'
       },
       {
-        name: 'Audit3',
-        price: '$200',
+        name: 'Wallet Forensics',
+        price: '$900',
         duration: '5 days',
-        modalContent: 'Lore ipsum and shitty shits',
+        modalContent: '3',
+        modalTitle: 'Wallet Forensics'
       },
       {
-        name: 'Audit4',
-        price: '$2,400',
+        name: 'KYC Verification',
+        price: '$450',
         duration: '3 days',
-        modalContent: 'Lore ipsum and shitty shits',
+        modalContent: '4',
+        modalTitle: 'KYC Verification'
+      },
+      {
+        name: 'KYC Verification',
+        price: '$450',
+        duration: '3 days',
+        modalContent: '5',
+        modalTitle: 'KYC Verification'
       }
     ]
 
 
 const Prices = () => {
-const { isOpen, onOpen, onClose } = useDisclosure()
+const [modalT, setModalT] = useState('');
+const [modalC, setModalC] = useState('');
+const [modalIsOpen, setModalIsOpen] = useState(false);
+
+const closeModal = () => {
+    setModalIsOpen(false)
+} 
+
   return (<>
     <Container bg='#f1f1f1' maxW='100%' textAlign={'center'} >
     <Text color='black' fontSize='3xl' pt='40px' ><b>Our audits & fees</b></Text>
@@ -88,14 +108,26 @@ const { isOpen, onOpen, onClose } = useDisclosure()
               size={'sm'}
               mr={'10px'}
               mt='7px'
-              _hover={{ bg: '#17294e'}} onClick={onOpen}>See details</Button>
-                        <Modal isOpen={isOpen} onClose={onClose} >
+              _hover={{ bg: '#17294e'}} onClick={()=> {
+                setModalIsOpen(true)
+               setModalC(audit.modalContent)
+               setModalT(audit.modalTitle)
+               
+              }}>See details </Button>
+
+</GridItem>
+                    </Grid> 
+                </Box>
+            </div>
+        ))}
+              
+<Modal isOpen={modalIsOpen} onClose={closeModal}>
         <ModalOverlay />
         <ModalContent mt='20%'>
-          <ModalHeader>{audit.name}</ModalHeader>
+          <ModalHeader>{modalT}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-           <Text>{audit.modalContent}</Text>
+           <Text>{modalC}</Text>
           </ModalBody>
           <ModalFooter>
             <Button
@@ -112,11 +144,6 @@ const { isOpen, onOpen, onClose } = useDisclosure()
           </ModalFooter>
         </ModalContent>
       </Modal>
-                        </GridItem>
-                    </Grid> 
-                </Box>
-            </div>
-        ))}
         </GridItem></Grid>  
         </Center>
     </Container>
