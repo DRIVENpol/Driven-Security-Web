@@ -28,10 +28,11 @@ export default function Hero() {
         />
       </Head>
 
-      <Container maxW={'75%'} mb='-100px' backgroundImage={logoBg.src} backgroundPosition='center' 
-      backgroundRepeat='no-repeat' backgroundSize='cover'
-      width='90vw'
-      height='90vh'>
+      <Container maxW={['100%', null, null, null, '75%']} backgroundImage={logoBg.src} 
+      backgroundPosition='center' 
+      backgroundRepeat='no-repeat' 
+      backgroundSize='cover'
+      mb='40px'>
         <Stack
           as={Box}
           textAlign={'center'}
@@ -57,7 +58,7 @@ export default function Hero() {
             Welcome to DRIVENsecurity!
           </Heading>
           <Text color={'gray.500'}>
-          Cryptocurrency is currently in a gold rush stage, with many new individuals entering the market, and whenever new people enter a market or space, there will always be others looking to take advantage of those new entrants. This is an undesirable occurrence in crypto space, but the reality is that it is quite simple due to the decentralized nature of cryptocurrency, people can steal your money in some instances, therefore we're here to help prevent that as much as we can using DRIVENsecurity.
+          Cryptocurrency is currently in a gold rush stage, with many new individuals entering the market, and whenever new people enter a market or space, there will always be others looking to take advantage of those new entrants. We're here to help prevent that as much as we can using DRIVENsecurity.
            <br/><br/> <b>DRIVENsecurity is a service that delivers security analysis for DeFi projects as part of the DRIVENecosystem.
           </b>
         </Text>
@@ -82,7 +83,7 @@ export default function Hero() {
             </Button>
             <Box>
             </Box>
-            <Center> <Link href={'https://www.drivenecosystem.com' } mb={['50px', null, null, '50px']} isExternal pr='15px'><u>DRIVENecosystem website</u></Link></Center>
+            <Center> <Link href={'https://www.drivenecosystem.com' }  isExternal pr='15px'><u>DRIVENecosystem website</u></Link></Center>
           </Stack>
         </Stack>
         
