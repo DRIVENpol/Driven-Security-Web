@@ -115,7 +115,7 @@ const closeModal = () => {
               
 <Modal isOpen={modalIsOpen} onClose={closeModal}>
         <ModalOverlay />
-        <ModalContent mt={['80%', '40%', null, '25%', '15%']}>
+        <ModalContent mt={['50%', '40%', null, '25%', '15%']}>
           <ModalHeader>{modalT}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
