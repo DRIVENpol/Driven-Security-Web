@@ -19,7 +19,7 @@ const SupportedChains = () => {
           We are making our audits available for every smart contract
           that is <br/>compatible with an EVM-based blockchain:
         </Text></Center><br/>
-    <Center  id="boxes">>
+    <Center  id="boxes">
     <Grid templateColumns={['repeat(1, 1fr)', null, 'repeat(3, 1fr)', 'repeat(3, 1fr)', 'repeat(4, 1fr)']} gap={6} w='50%' mb='20px' mt='20px'>
     <GridItem w='100%' h='10' align='center' mb='20px'><Image src={Eth.src} /></GridItem>
     <GridItem w='100%' h='10' align='center' mb='20px'><Image src={Bsc.src} /></GridItem>
