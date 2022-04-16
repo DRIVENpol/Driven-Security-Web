@@ -59,14 +59,14 @@ const closeModal = () => {
 } 
 
   return (<>
-    <Container bg='#f1f1f1' maxW='100%' textAlign={'center'} >
+    <Container bg='#f1f1f1' maxW='100%' textAlign={'center'}>
     <Text color='black' fontSize='3xl' pt='40px' ><b>Our audits & fees</b></Text>
-    <Container bg='#f1f1f1' maxW='100%'><Text color={'grey'} align='center' mb='20px'>
+    <Container bg='#f1f1f1' maxW='100%'><Text color={'grey'} align='center'>
           Learn more about our audits and find the according fees
         </Text></Container><br/>
         <Center>
 
-        <Grid templateColumns='repeat(1, 1fr)' gap={6} w={['100%', null, null, null, '50%']}> 
+        <Grid pb='60px' templateColumns='repeat(1, 1fr)' gap={6} w={['100%', null, null, null, '50%']}> 
         <GridItem>
         {auditPrices && auditPrices.map(audit => (
             <div key={audit.name}>
@@ -110,8 +110,7 @@ const closeModal = () => {
 
 </GridItem>
                     </Grid> 
-                </Box>
-            </div>
+                </Box> </div>
         ))}
               
 <Modal isOpen={modalIsOpen} onClose={closeModal}>
