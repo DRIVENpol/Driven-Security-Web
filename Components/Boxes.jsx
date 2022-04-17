@@ -104,7 +104,6 @@ const Boxes = () => {
               View Audit
               </Link>
             </Button>
-            <Text>On Github</Text>
             </Stack>
             </Stack>
             
