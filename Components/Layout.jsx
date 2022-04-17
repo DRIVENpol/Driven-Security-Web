@@ -63,7 +63,8 @@ const Navbar = () => {
               fontSize={['12px', null, null, null, '100%']}
               leftIcon={<AddIcon />}
               _hover={{ bg: 'white',
-              color:'black'}}>
+              color:'black'}}
+              display={{ base: 'none', md: 'flex' }}>
               <Link isExternal href={'https://tcj29s11ect.typeform.com/to/byJd7PeS'}>
               Request An Audit
               </Link>
@@ -90,11 +91,13 @@ const Navbar = () => {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              
+
             <Button border='1px' borderColor='#00fed9' colorScheme='blackAlpha' onClick={() => window.location.replace("/#")}>Home</Button>
             <Button border='1px' borderColor='#00fed9' colorScheme='blackAlpha'onClick={() => window.location.replace("/#boxes")}>Audits</Button>
             <Button border='1px' borderColor='#00fed9' colorScheme='blackAlpha'onClick={() => window.location.replace("/#prices")}>Prices</Button>
-
+            <Button bg='#00fed9' ><Link isExternal href={'https://tcj29s11ect.typeform.com/to/byJd7PeS'}>
+              Request An Audit
+              </Link></Button>
             </Stack>
           </Box>
         ) : null}
