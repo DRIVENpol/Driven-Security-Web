@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Text, Center, Grid, GridItem, Box } from '@chakra-ui/react'
+import { Text, Center, Grid, GridItem, Box, Container } from '@chakra-ui/react'
 import { Avatar, Stack, Badge, Button, Link, HStack } from '@chakra-ui/react'
 import { AttachmentIcon, FaFacebook, FaTwitter } from '@chakra-ui/icons';
 
@@ -55,20 +55,20 @@ const projects = [
 const Boxes = () => {
   return (
     <>
-
+<Container maxW={'100%'} bg='#000b22' mt='-20px' pt='5%' pb='2%'>
 <Center>
-    <Text color='black' fontSize='3xl' mt='40px' ><b>DRIVENsecurity audits</b></Text>
+    <Text color='white' fontSize='3xl' ><b>DRIVENsecurity audits</b></Text>
     </Center>
-    <Center><Text color={'grey'} align='center'>
+    <Center><Text color={'white'} align='center'>
           Check our latest audits
         </Text></Center><br/>
     <Center>
-    <Grid templateColumns={['repeat(1, 1fr)', null, 'repeat(2, 1fr)', 'repeat(3, 1fr)', 'repeat(4, 1fr)', 'repeat(5, 1fr)']} gap={6} w='75%' mb='6px'>
+    <Grid color='white' templateColumns={['repeat(1, 1fr)', null, 'repeat(2, 1fr)', 'repeat(3, 1fr)', 'repeat(4, 1fr)', 'repeat(5, 1fr)']} gap={6} w='75%' mb='6px'>
 
     {projects && projects.map(project => (
-       <div key={project.name}>
-       <GridItem w='100%' h='10' align='center' mb='170px'>
-    <Box maxW='sm' borderWidth='1px' borderRadius='lg' alignContent={'center'}>
+       <div key={project.name} >
+       <GridItem w='100%' h='10' align='center' mb='200px'>
+    <Box maxW='sm' borderWidth='1px' borderColor={'#00fed9'} borderRadius='lg' alignContent={'center'}>
         <Stack direction='row' alignItems='baseline'>
             <Avatar mt='5%' ml='2%' src={project.link} />
             <div>
@@ -92,13 +92,14 @@ const Boxes = () => {
         <Stack direction='row' ml='2%' mb='5%' mt='5%'> 
         <Button
               variant={'solid'}
-              bg='#000b22'
-              color='white'
+              bg='#00fed9'
+              color='black'
               w='50%'
               size={'sm'}
               mr={1}
               leftIcon={<AttachmentIcon />}
-              _hover={{ bg: '#17294e'}}>
+              _hover={{ bg: 'white',
+              color:'black'}}>
               <Link isExternal href={project.githubLink}>
               See Audit
               </Link>
@@ -115,7 +116,7 @@ const Boxes = () => {
 <br />
 
     </Grid>
-   </Center><br /><br />
+   </Center><br /><br /></Container>
     </>
   )
 }

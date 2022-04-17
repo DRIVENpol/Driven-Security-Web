@@ -16,7 +16,7 @@ import {
    HStack, Center
 } from '@chakra-ui/react';
 
-import logoBg from '../Assets/Images/bg-dvx-web.png'
+import logoBg from '../Assets/Images/dvs-green.png'
 
 export default function Hero() {
   return (
@@ -27,24 +27,25 @@ export default function Hero() {
           rel="stylesheet"
         />
       </Head>
-
+    <Container maxW='100%' bg='#000b22'>
       <Container maxW={['100%', null, null, null, '75%']} backgroundImage={logoBg.src} 
       backgroundPosition='bottom' 
       backgroundRepeat='no-repeat' 
-      backgroundSize='cover'>
+      backgroundSize='cover'
+      >
         <Stack
           as={Box}
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }} >
+          py={{ base: 20, md: 36 }}>
 
 
         <Center >
             <HStack spacing={4}>
-                <Tag size={'lg'}  variant='subtle' colorScheme='messenger'  
-                mt={['20px', null, null, null, '20px']}>
+                <Tag size={'lg'}  variant='subtle' bg='#00fed9'  
+                mt={['20px', null, null, null, '20px']} borderRadius='100px'>
                 <Center>
-                <TagLabel mt='4px' mb='4px' ml='4px' mr='4px'><b>Latest news: <br /></b>DRIVENsecurity introducing NFT audits</TagLabel>
+                <TagLabel mt='6px' mb='6px' ml='6px' mr='6px'><b>Latest news: <br /></b>DRIVENsecurity introducing NFT audits</TagLabel>
                 </Center>
                 </Tag>
             
@@ -54,10 +55,10 @@ export default function Hero() {
           <Heading
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}>
+            lineHeight={'110%'} color='white'>
             Welcome to DRIVENsecurity!
           </Heading>
-          <Text color={'gray.500'}>
+          <Text color={'white'}>
           Cryptocurrency is currently in a gold rush stage, with many new individuals entering the market, and whenever new people enter a market or space, there will always be others looking to take advantage of those new entrants. We're here to help prevent that as much as we can using DRIVENsecurity.
            <br/><br/> <b>DRIVENsecurity is a service that delivers security analysis for DeFi projects as part of the DRIVENecosystem.
           </b>
@@ -70,12 +71,12 @@ export default function Hero() {
             position={'relative'}>
            <Button
               variant={'solid'}
-              bg='#000b22'
-              color='white'
+              bg='#00fed9'
+              color='black'
               size={'lg'}
               zIndex={'0'}
               mr={4}
-              _hover={{ bg: '#17294e'}}>
+              _hover={{ bg: 'white'}}>
               <Link isExternal href={'https://tcj29s11ect.typeform.com/to/byJd7PeS'}>
               Request An Audit
               </Link>
@@ -83,10 +84,10 @@ export default function Hero() {
             </Button>
             <Box>
             </Box>
-            <Center> <Link href={'https://www.drivenecosystem.com' }  isExternal pr='15px'><u>DRIVENecosystem website</u></Link></Center>
+            <Center> <Link href={'https://www.drivenecosystem.com' }  color='white' isExternal pr='15px'><u>DRIVENecosystem website</u></Link></Center>
           </Stack>
         </Stack>
-        
+        </Container>
       </Container>
     </>
   );

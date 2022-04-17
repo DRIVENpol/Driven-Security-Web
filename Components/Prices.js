@@ -59,9 +59,9 @@ const closeModal = () => {
 } 
 
   return (<>
-    <Container bg='#f1f1f1' maxW='100%' textAlign={'center'}  id="prices">
-    <Text color='black' fontSize='3xl' pt='40px' ><b>Our audits & fees</b></Text>
-    <Container bg='#f1f1f1' maxW='100%'><Text color={'grey'} align='center'>
+    <Container bg='#1f334c' maxW='100%' textAlign={'center'}  id="prices">
+    <Text color='white' fontSize='3xl' pt='40px' ><b>Our audits & fees</b></Text>
+    <Container bg='#1f334c' maxW='100%'><Text color={'white'} align='center'>
           Learn more about our audits and find the according fees
         </Text></Container><br/>
         <Center>
@@ -70,8 +70,8 @@ const closeModal = () => {
         <GridItem>
         {auditPrices && auditPrices.map(audit => (
             <div key={audit.name}>
-            <Box  w={'100%'} p={4} color='black' 
-                borderWidth='2px' borderColor={'black'}
+            <Box  w={'100%'} p={4} color='#00fed9' 
+                borderWidth='2px' borderColor={'#00fed9'} bg='#00202f'
                 borderRadius='15px'
                 textAlign={'left'}
                 pb={['40px', null, null, '40px', null, '20px']} mb='10px'>
@@ -95,13 +95,14 @@ const closeModal = () => {
                         <GridItem w='100%' h='10'>
                         <Button
               variant={'solid'}
-              bg='#000b22'
-              color='white'
+              bg='#00fed9'
+              color='black'
               w='100%'
               size={'sm'}
               mr={'10px'}
               mt={['20px', null, null, null, '17px','7px']}
-              _hover={{ bg: '#17294e'}} onClick={()=> {
+              _hover={{ bg: 'white',
+              color: 'black'}} onClick={()=> {
                 setModalIsOpen(true)
                setModalC(audit.modalContent)
                setModalT(audit.modalTitle)

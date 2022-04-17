@@ -43,22 +43,27 @@ const Navbar = () => {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
               
-            <Button colorScheme='blackAlpha' onClick={() => window.location.replace("/#")}>Home</Button>
-            <Button colorScheme='blackAlpha'onClick={() => window.location.replace("/#boxes")}>Audits</Button>
-            <Button colorScheme='blackAlpha'onClick={() => window.location.replace("/#prices")}>Prices</Button>
+            <Button bg='#00fed9' color='black' _hover={{ bg: 'white',
+              color:'black'}} onClick={() => window.location.replace("/#")}>Home</Button>
+            <Button bg='#00fed9' color='black' _hover={{ bg: 'white',
+              color:'black'}} onClick={() => window.location.replace("/#boxes")}>Audits</Button>
+            <Button bg='#00fed9' color='black' _hover={{ bg: 'white',
+              color:'black'}} onClick={() => window.location.replace("/#prices")}>Prices</Button>
 
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
             <Button
               variant={'solid'}
-              bg='#086F83'
-              color='white'
+              bg='#00fed9'
+              color='black'
+              borderRadius='100px'
               maxW={['75%', null, null, null, '100%']}
               ml="30px"
-              fontSize={['10px', null, null, null, '100%']}
+              fontSize={['12px', null, null, null, '100%']}
               leftIcon={<AddIcon />}
-              _hover={{ bg: '#1c8ca2'}}>
+              _hover={{ bg: 'white',
+              color:'black'}}>
               <Link isExternal href={'https://tcj29s11ect.typeform.com/to/byJd7PeS'}>
               Request An Audit
               </Link>
@@ -86,9 +91,9 @@ const Navbar = () => {
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               
-            <Button colorScheme='blackAlpha' onClick={() => window.location.replace("/#")}>Home</Button>
-            <Button colorScheme='blackAlpha'onClick={() => window.location.replace("/#boxes")}>Audits</Button>
-            <Button colorScheme='blackAlpha'onClick={() => window.location.replace("/#prices")}>Prices</Button>
+            <Button border='1px' borderColor='#00fed9' colorScheme='blackAlpha' onClick={() => window.location.replace("/#")}>Home</Button>
+            <Button border='1px' borderColor='#00fed9' colorScheme='blackAlpha'onClick={() => window.location.replace("/#boxes")}>Audits</Button>
+            <Button border='1px' borderColor='#00fed9' colorScheme='blackAlpha'onClick={() => window.location.replace("/#prices")}>Prices</Button>
 
             </Stack>
           </Box>

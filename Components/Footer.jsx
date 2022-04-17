@@ -12,9 +12,9 @@ const Footer = () => {
   <GridItem w='100%' mt={[null, null, null, null, '10px']}><Text>All Rights Reserved.</Text></GridItem>
   <GridItem w='100%'><Center>
   <HStack> 
-  <Button colorScheme='blackAlpha'><Link href='https://discord.com/invite/qZ36FNT23w' isExternal>Discord</Link></Button>
-  <Button colorScheme='blackAlpha'><Link href='https://twitter.com/DRIVENprotocol' isExternal>Twitter</Link></Button>
-  <Button colorScheme='blackAlpha'><Link href='https://www.drivenecosystem.com/' isExternal>DRIVENecosystem</Link></Button>
+  <Button border='1px' borderColor='#00fed9' colorScheme='blackAlpha'><Link href='https://discord.com/invite/qZ36FNT23w' isExternal>Discord</Link></Button>
+  <Button border='1px' borderColor='#00fed9' colorScheme='blackAlpha'><Link href='https://twitter.com/DRIVENprotocol' isExternal>Twitter</Link></Button>
+  <Button border='1px' borderColor='#00fed9' colorScheme='blackAlpha'><Link href='https://www.drivenecosystem.com/' isExternal>DRIVENecosystem</Link></Button>
   </HStack> </Center>
   </GridItem>
 </Grid>
