@@ -43,11 +43,17 @@ const Navbar = () => {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
               
-            <Button bg='#00fed9' color='black' _hover={{ bg: 'white',
+            <Button borderRadius={'20px'} border='1px' borderColor={'#00fed9'} 
+            color='#00fed9' bg='grey.100'
+            _hover={{ bg: 'white',
               color:'black'}} onClick={() => window.location.replace("/#")}>Home</Button>
-            <Button bg='#00fed9' color='black' _hover={{ bg: 'white',
+           <Button borderRadius={'20px'} border='1px' borderColor={'#00fed9'} 
+            color='#00fed9' bg='grey.100'
+            _hover={{ bg: 'white',
               color:'black'}} onClick={() => window.location.replace("/#boxes")}>Audits</Button>
-            <Button bg='#00fed9' color='black' _hover={{ bg: 'white',
+            <Button borderRadius={'20px'} border='1px' borderColor={'#00fed9'} 
+            color='#00fed9' bg='grey.100'
+            _hover={{ bg: 'white',
               color:'black'}} onClick={() => window.location.replace("/#prices")}>Prices</Button>
 
             </HStack>
