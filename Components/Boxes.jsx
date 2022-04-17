@@ -101,7 +101,7 @@ const Boxes = () => {
               _hover={{ bg: 'white',
               color:'black'}}>
               <Link isExternal href={project.githubLink}>
-              See Audit
+              View Audit
               </Link>
             </Button>
             <Text>On Github</Text>
