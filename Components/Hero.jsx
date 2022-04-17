@@ -12,7 +12,7 @@ import {
   Link,
   Tag,
   TagLabel,
-  TagLeftIcon,
+ Flex,
    HStack, Center
 } from '@chakra-ui/react';
 
@@ -27,7 +27,7 @@ export default function Hero() {
           rel="stylesheet"
         />
       </Head>
-    <Container maxW='100%' bg='#000b22'>
+    <Flex maxW='100%' bg='#000b22'>
       <Container maxW={['100%', null, null, null, '75%']} backgroundImage={logoBg.src} 
       backgroundPosition='bottom' 
       backgroundRepeat='no-repeat' 
@@ -88,7 +88,7 @@ export default function Hero() {
           </Stack>
         </Stack>
         </Container>
-      </Container>
+      </Flex>
     </>
   );
 }
