@@ -73,9 +73,9 @@ const closeModal = () => {
             <Box  w={'100%'} p={4} color='#00fed9' 
                 borderWidth='2px' borderColor={'#00fed9'} bg='#00202f'
                 borderRadius='15px'
-                textAlign={'left'}
+                textAlign={['center', null, null, null, 'left']}
                 pb={['40px', null, null, '40px', null, '20px']} mb='10px'>
-                  <Grid templateColumns='repeat(4, 1fr)' gap={6} >
+                  <Grid templateColumns={['repeat(1, 1fr)', null, 'repeat(4, 1fr)', 'repeat(4, 1fr)', 'repeat(4, 1fr)']} gap={6} >
                         <GridItem w='100%' h='10'>
                             <Text><b>Type</b></Text>
                             <Text>{audit.name}</Text>
