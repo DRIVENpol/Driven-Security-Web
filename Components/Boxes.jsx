@@ -6,8 +6,8 @@ import { AttachmentIcon, FaFacebook, FaTwitter } from '@chakra-ui/icons';
 
 const projects = [
 {
-  name: 'TCG',
-  type: 'Metaverse',
+  name: 'TCG World',
+  type: 'Project Audit',
   link: 'https://www.drivenx.finance/wp-content/uploads/2022/02/TCG-drivenlock.png',
   chain: 'BSC & ETH',
   auditType: 'FULL',
@@ -16,7 +16,7 @@ const projects = [
 
 {
   name: 'JoinCoin',
-  type: 'Staking',
+  type: 'Staking Contract',
   link: 'https://s2.coinmarketcap.com/static/img/coins/64x64/18733.png',
   chain: 'BSC',
   auditType: 'TECHNICAL',
@@ -24,32 +24,76 @@ const projects = [
 },
 
 {
-  name: 'MINE',
-  type: 'Utility',
+  name: 'MINE Token',
+  type: 'Project Audit',
   link: 'https://theofficialminetoken.io/wp-content/uploads/elementor/thumbs/cropped-logo-MCMT_120px-pii1f11vaz5bjvyertktwrn0wty3007rdga2em3s9a.png',
   chain: 'ETH',
   auditType: 'FULL',
   githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/MINE_fundamental_code.pdf'
 },
-{
-  name: 'EverRise',
-  type: 'Utility',
-  link: 'https://s2.coinmarketcap.com/static/img/coins/64x64/15257.png',
-  chain: 'BSC',
-  auditType: 'FUNDAMENTAL',
-  githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/EverRise_fundamental.pdf'
-},
+
 {
   name: 'Elitheum',
-  type: 'Utility',
+  type: 'Staking Contract',
   link: 'https://s2.coinmarketcap.com/static/img/coins/64x64/12320.png',
   chain: 'BSC',
   auditType: 'TECHNICAL',
   githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/Elitheum_code.pdf'
-}
+},
 
+{
+  name: 'RP1',
+  type: 'BEP20 Token',
+  link: 'https://nomics.com/imgpr/https%3A%2F%2Fs3.us-east-2.amazonaws.com%2Fnomics-api%2Fstatic%2Fimages%2Fcurrencies%2FRP1.png?width=48',
+  chain: 'BSC',
+  auditType: 'TECHNICAL',
+  githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/RP1_code.pdf'
+},
 
+{
+  name: 'Volterra',
+  type: 'BEP20 Token',
+  link: 'https://nomics.com/imgpr/https%3A%2F%2Fs3.us-east-2.amazonaws.com%2Fnomics-api%2Fstatic%2Fimages%2Fcurrencies%2FVOLT4.jpeg?width=48',
+  chain: 'BSC',
+  auditType: 'TECHNICAL',
+  githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/Volterra_code.pdf'
+},
 
+{
+  name: 'MoonX',
+  type: 'BEP20 Token',
+  link: 'https://s2.coinmarketcap.com/static/img/coins/64x64/12474.png',
+  chain: 'BSC',
+  auditType: 'TECHNICAL',
+  githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/MoonX_code.pdf'
+},
+
+{
+  name: 'TCG Coin 2.0',
+  type: 'ERC20 Token',
+  link: 'https://www.drivenx.finance/wp-content/uploads/2022/02/TCG-drivenlock.png',
+  chain: 'ETH',
+  auditType: 'TECHNICAL',
+  githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/TCG-ERC_code.pdf'
+},
+
+{
+  name: 'Little Sparrow',
+  type: 'Project Audit',
+  link: '',
+  chain: 'BSC',
+  auditType: 'FUNDAMENTAL',
+  githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/LittleSparrow_fundamental.pdf'
+},
+
+{
+  name: 'TCG Coin 2.0 Staking',
+  type: 'Staking Contract',
+  link: 'https://www.drivenx.finance/wp-content/uploads/2022/02/TCG-drivenlock.png',
+  chain: 'BSC',
+  auditType: 'TECHNICAL',
+  githubLink: 'https://github.com/DRIVENx/DRIVENsecurity-audits/blob/main/DRIVENsecurity_TCG-Staking_Technical_2022.pdf'
+},
 ]
 
 const Boxes = () => {
